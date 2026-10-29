@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="رفيق، المساعد البلدي الذكي والآمن">
+  <title>رفيق | المساعد البلدي الذكي</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-top"></div>
+  <div class="ambient ambient-bottom"></div>
+
+  <main class="shell">
+    <nav class="topbar" aria-label="التنقل الرئيسي">
+      <div class="brand">
+        <span class="brand-mark">ر</span>
+        <span class="brand-text"><strong>رفيق</strong><small>خدمات مدار البلدية</small></span>
+      </div>
+      <div class="security-badge"><span class="pulse"></span>جلسة آمنة</div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">المساعد البلدي الذكي</div>
+        <h1>خدماتك البلدية<br><span>بوضوح وأمان</span></h1>
+        <p class="hero-description">اسأل عن الرسوم والطلبات والمواعيد، واحصل على إجابة دقيقة مستندة إلى السياسات الرسمية.</p>
+        <a href="#workspace" class="hero-button">ابدأ المحادثة <span>←</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-large"></div>
+        <div class="orbit orbit-small"></div>
+        <div class="visual-core">ر</div>
+        <div class="visual-label"><span class="pulse"></span>النظام جاهز</div>
+      </div>
+    </section>
+
+    <section class="feature-strip" aria-label="مزايا النظام">
+      <div class="feature"><span class="feature-icon">⌁</span><div><strong>إجابات موثقة</strong><small>باستخدام السياسات الرسمية</small></div></div>
+      <div class="feature"><span class="feature-icon">✓</span><div><strong>خصوصية محمية</strong><small>تحقق قبل عرض بيانات الطلب</small></div></div>
+      <div class="feature"><span class="feature-icon">↗</span><div><strong>موافقة بشرية</strong><small>قبل أي إجراء يغيّر البيانات</small></div></div>
+    </section>
+
+    <section id="workspace" class="workspace">
+      <div class="section-heading">
+        <div><span class="section-label">التجربة المباشرة</span><h2>كيف يمكنني مساعدتك؟</h2></div>
+        <span class="keyboard-hint">Ctrl + Enter للإرسال</span>
+      </div>
+      <label class="sr-only" for="message">اكتب سؤالك</label>
+      <textarea id="message" placeholder="اكتب سؤالك هنا، مثل: ما رسوم لوحة مضيئة مساحتها 3 متر مربع؟"></textarea>
+      <div class="workspace-footer">
+        <label class="approval-check"><input id="confirm" type="checkbox"><span>أوافق صراحة على تنفيذ أي إجراء يتطلب تغييرًا في البيانات</span></label>
+        <button id="send" class="send-button"><span>إرسال السؤال</span><b>←</b></button>
+      </div>
+    </section>
+
+    <section class="response-card" aria-live="polite">
+      <div class="response-heading"><div><span class="section-label">إجابة رفيق</span><h2>النتيجة</h2></div><span id="tools" class="tools"></span></div>
+      <div id="answer" class="answer">ستظهر إجابة رفيق هنا بعد إرسال سؤالك.</div>
+    </section>
+
+    <section class="examples-section">
+      <span class="section-label">جرّب أحد الأمثلة</span>
+      <div class="examples">
+        <button data-example="ما رسوم لوحة مضيئة مساحتها 3 متر مربع؟"><span>١</span>حساب رسوم لوحة</button>
+        <button data-example="ما حالة الطلب BLD-20417؟"><span>٢</span>الاستعلام عن طلب</button>
+        <button data-example="أريد معرفة مواعيد التفتيش المتاحة في حي الروضة من 4 إلى 5 نوفمبر 2026."><span>٣</span>مواعيد التفتيش</button>
+      </div>
+    </section>
+
+    <footer><span>رفيق · المساعد البلدي الذكي</span><span>بيانات اصطناعية لأغراض تعليمية</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
